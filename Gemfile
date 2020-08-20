@@ -24,6 +24,12 @@ gem 'jbuilder', '~> 2.7'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
+# Adjusts classes to browser version
+gem 'autoprefixer-rails'
+# For awesome fonts as incons
+gem 'font-awesome-sass', '~> 5.12.0'
+# For beautiful forms
+gem 'simple_form'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
