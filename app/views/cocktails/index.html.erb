@@ -1,7 +1,18 @@
-<h1>Cocktails#index</h1>
-<p>Find me in app/views/cocktails/index.html.erb</p>
 
-<%= link_to "Add a new cocktail", new_cocktail_path %>
-<% @cocktails.each do |cocktail| %>
-  <li><%= link_to cocktail.name, cocktail_path(cocktail.id) %></li>
-<% end %>
+
+
+<div class="container">
+  <div class="row">
+    <% @cocktails.each do |cocktail| %>
+    <div class="col-12 col-md-6 col-lg-4">
+      <%= link_to(cocktail_path(cocktail.id)) do %>
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+      url(<%= cocktail.img_url %>)">
+      <%= cocktail.name %>
+    </div>
+    <% end %>
+  </div>
+  <% end %>
+</div>
+</div>
+c

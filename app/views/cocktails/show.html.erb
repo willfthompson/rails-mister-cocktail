@@ -1,5 +1,4 @@
-<h1>Cocktails#show</h1>
-<p>Find me in app/views/cocktails/show.html.erb</p>
+
 
 <h1><%= @cocktail.name %></h1>
 
@@ -14,5 +13,3 @@
 <h4> <%= Ingredient.find(dose.ingredient_id).name %> <%= dose.description %>  </h4>
 <p> <%= link_to "Delete", dose_path(dose.id), method: :delete %> </p>
 <% end %>
-
-<%= link_to "Home", cocktails_path %>
