@@ -4,20 +4,28 @@
   <title>RailsMisterCocktail</title>
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+</style>
+ <style>
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;800&family=Pacifico&display=swap');
+</style>
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-
 </head>
 
 
 <body>
+  <div class="body">
   <%= render "shared/navbar" %>
 
   <%= yield %>
 
   <%= render "shared/footer" %>
   <%= javascript_pack_tag "application" %>
+  </div>
 </body>
 </html>

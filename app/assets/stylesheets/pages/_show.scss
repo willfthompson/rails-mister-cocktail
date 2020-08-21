@@ -1,0 +1,48 @@
+.container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.ingredients{
+ margin: 10px;
+ background: #E56A77;
+ padding: 50px;
+ border-radius: 5px;
+ box-shadow: 5px 10px 20px rgba 0, 0, 0;
+ display: grid;
+ grid-template-columns: 1fr 1fr auto auto;
+}
+
+.ingredients-name{
+  background: #53ECF4;
+  padding: 3px;
+}
+
+.ingredients-dose{
+  background: #53ECF4;
+  padding: 3px;
+}
+
+.ingredients-trash a{
+  color: black;
+}
+
+.new-dose-form{
+  margin: 10px;
+}
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  height: 700px;
+}
+
+#cocktail-name{
+  font-size: 60px;
+  padding: 20px;
+  font-family: 'Pacifico', cursive;
+  color: #53ECF4;
+}
+
+

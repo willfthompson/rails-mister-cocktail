@@ -1,17 +1,33 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= cl_image_path @cocktail.photo.key %>);">
+  <div class="container">
+  </div>
+</div>
 
+<h1 id="cocktail-name"><%= @cocktail.name %></h1>
 <div class="container">
-  <h1><%= @cocktail.name %></h1>
+  <div class="ingredients">
   <% @cocktail.doses.each do |dose| %>
-  <h4>
-    <%= Ingredient.find(dose.ingredient_id).name %> <%= dose.description %>
+  <div class="ingredients-name">
+  <h4><%= Ingredient.find(dose.ingredient_id).name %></h4>
+    </div>
+    <div class="ingredients-dose">
+    <h4><%= dose.description %></h4>
+    </div>
+    <div class="ingredients-trash">
+     <p>
     <%= link_to dose_path(dose.id), method: :delete  do %>
       <i id="trash" class="fas fa-trash"></i>
+      </p>
+      </div>
     <% end %>
-  </h4>
+
   <% end %>
+  </div>
+  <div class="new-dose-form">
   <%= simple_form_for [ @cocktail, @dose ] do |f| %>
     <%= f.association :ingredient %>
     <%= f.input :description %>
     <%= f.submit "Add Dose", class: "btn btn-success" %>
   <% end %>
+  </div>
 </div>

@@ -20,10 +20,10 @@ ingredient["drinks"].each do |ingredient|
 end
 
 def make_dose(cocktail)
-  dose = Dose.new(description: "#{rand(1..5)}measure", ingredient_id: rand(1..100))
+  dose = Dose.new(description: "#{rand(1..5)} measure", ingredient_id: rand(1..100))
   dose.cocktail = cocktail
   dose.save!
-  dose = Dose.new(description: "#{rand(1..5)}measure", ingredient_id: rand(1..100))
+  dose = Dose.new(description: "#{rand(1..5)} measure", ingredient_id: rand(1..100))
   dose.cocktail = cocktail
   dose.save!
 end
