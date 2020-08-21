@@ -15,10 +15,14 @@
   z-index: 1;
 }
 
-.card-category .hover{
-  text-decoration: none !important;
-}
+
 
 .col-12.col-md-6.col-lg-4 {
   padding: 2px !important;
+
+}
+
+
+.col-12.col-md-6.col-lg-4  a{
+  color: $success;
 }
