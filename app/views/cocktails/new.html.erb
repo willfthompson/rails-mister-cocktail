@@ -1,8 +1,11 @@
-<h1>Cocktails#new</h1>
-<p>Find me in app/views/cocktails/new.html.erb</p>
 
-<%= simple_form_for [ @cocktail ] do |f| %>
-  <%= f.input :name %>
-  <%= f.input :img_url %>
-  <%= f.submit "Create Cocktail", class: "btn btn-success" %>
-<% end %>
+<div class="container">
+  <h1>Cocktails#new</h1>
+  <p>Find me in app/views/cocktails/new.html.erb</p>
+
+  <%= simple_form_for [ @cocktail ] do |f| %>
+    <%= f.input :name %>
+    <%= f.input :img_url %>
+    <%= f.submit "Create Cocktail", class: "btn btn-success" %>
+  <% end %>
+</div>
